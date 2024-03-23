@@ -5,7 +5,7 @@ import 'dotenv/config';
 export const initMongoDB = async() => {
   try {
     await connect(
-      process.env.MONGO_ATLAS_URL
+      mongodb+srv://Admin:5kSTLCIRxPS3kZzS@coderhouse.9tlb0vq.mongodb.net/farmacia
     );
     logger.info(`💾 Conectado a la base de datos MongoDB`);
   } catch (error) {
