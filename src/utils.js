@@ -15,21 +15,21 @@ export const createResponse = (res, statusCode, data) => {
   return res.status(statusCode).json({ data });
 };
 
-//export const mongoStoreOptions = {
-//  store: mongoStore.create({
-//      mongoUrl: process.env.MONGO_ATLAS_URL,
-//      ttl: 120,
-//      crypto: {
-//          secret: '1234'
-//      }
-//  }),
-//  secret: "1234",
-//  resave: false,
-//  saveUninitialized: false,
-//  cookie: {
-//      maxAge: 120000,
-//  },
-//};
+export const mongoStoreOptions = {
+  store: mongoStore.create({
+      mongoUrl: process.env.MONGO_ATLAS_URL,
+      ttl: 120,
+      crypto: {
+          secret: '1234'
+      }
+  }),
+  secret: "1234",
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+      maxAge: 120000,
+  },
+};
 
 // comparador de fechas
 
