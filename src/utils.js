@@ -17,7 +17,7 @@ export const createResponse = (res, statusCode, data) => {
 
 export const mongoStoreOptions = {
   store: mongoStore.create({
-      mongoUrl: process.env.MONGO_LOCAL_URL,
+      mongoUrl: process.env.MONGO_ATLAS_URL,
       ttl: 120,
       crypto: {
           secret: '1234'
