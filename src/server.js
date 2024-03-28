@@ -3,7 +3,7 @@ import session from "express-session";
 import morgan from 'morgan';
 import handlebars from 'express-handlebars';
 import cookieParser from "cookie-parser";
-import { __dirname } from './utils.js';
+import { __dirname, mongoStoreOptions } from './utils.js';
 
 import MainRouter from './routes/index.js';
 import { errorHandler } from './middlewares/errorHandler.js';
