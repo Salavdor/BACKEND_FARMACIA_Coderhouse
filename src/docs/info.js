@@ -8,7 +8,7 @@ export const info = {
     },
     servers: [
       {
-        url: "http://localhost:8080/api",
+        url: "https://backend-farmacia-p3ix.onrender.com/api",
       },
     ],
   },
